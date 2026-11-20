@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Design your own handmade bouquet — choose your size, flowers, wrapper, ribbon and finishing touches. Delivered islandwide by Dear Flora.">
+  <meta property="og:title" content="Customise Your Bouquet | Dear Flora">
+  <meta property="og:description" content="Choose each finishing touch and watch your estimated price update as you create your own bouquet.">
+  <meta property="og:type" content="website">
+  <title>Customise Your Bouquet | Dear Flora</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/customize.js" defer></script>
+</head>
+<body class="customize-page">
+  <header>
+    <a href="index.html" class="logo-link"><img src="image/logo.jpeg" alt="Dear Flora Logo" class="logo"></a>
+    <nav><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="customize.html" aria-current="page">Customize</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a></nav>
+  </header>
+
+  <main class="customize-main">
+    <section class="customize-intro">
+      <p class="eyebrow">MADE FOR YOUR MOMENT</p>
+      <h1>Design a bouquet that feels like you</h1>
+      <p>Choose each finishing touch and watch your estimated price update as you create.</p>
+    </section>
+
+    <form id="customizeForm" class="customize-layout">
+      <section class="customization-options" aria-label="Bouquet customisation options">
+        <fieldset>
+          <legend><span>01</span> Choose your size</legend>
+          <div class="option-grid three-options">
+            <label class="choice-card"><input type="radio" name="size" value="Petite" data-price="1200"><strong>Petite</strong><small>A sweet little gesture</small><b>Rs. 1,200</b></label>
+            <label class="choice-card selected"><input type="radio" name="size" value="Signature" data-price="1600" checked><strong>Signature</strong><small>Our most-loved size</small><b>Rs. 1,600</b></label>
+            <label class="choice-card"><input type="radio" name="size" value="Grand" data-price="2200"><strong>Grand</strong><small>For a big celebration</small><b>Rs. 2,200</b></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>02</span> Choose your flower</legend>
+          <div class="option-grid">
+            <label class="choice-card selected"><input type="radio" name="flower" value="Rose" data-price="200" checked><strong>Rose</strong><small>Timeless and romantic</small><b>+ Rs. 200</b></label>
+            <label class="choice-card"><input type="radio" name="flower" value="Lily" data-price="300"><strong>Lily</strong><small>Graceful and fragrant</small><b>+ Rs. 300</b></label>
+            <label class="choice-card"><input type="radio" name="flower" value="Tulip" data-price="250"><strong>Tulip</strong><small>Bright and cheerful</small><b>+ Rs. 250</b></label>
+            <label class="choice-card"><input type="radio" name="flower" value="Sunflower" data-price="200"><strong>Sunflower</strong><small>Warm and joyful</small><b>+ Rs. 200</b></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>03</span> Wrapper and ribbon</legend>
+          <div class="option-grid">
+            <label class="choice-card selected"><input type="radio" name="wrapper" value="Ivory Wrap" data-price="0" checked><strong>Ivory Wrap</strong><small>Soft and elegant</small><b>Included</b></label>
+            <label class="choice-card"><input type="radio" name="wrapper" value="Mocha Wrap" data-price="100"><strong>Mocha Wrap</strong><small>Warm luxury finish</small><b>+ Rs. 100</b></label>
+            <label class="choice-card selected"><input type="radio" name="ribbon" value="Satin Ribbon" data-price="100" checked><strong>Satin Ribbon</strong><small>Classic finishing touch</small><b>+ Rs. 100</b></label>
+            <label class="choice-card"><input type="radio" name="ribbon" value="Velvet Ribbon" data-price="150"><strong>Velvet Ribbon</strong><small>Rich premium texture</small><b>+ Rs. 150</b></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>04</span> Extra details</legend>
+          <div class="option-grid">
+            <label class="choice-card selected"><input type="radio" name="butterfly" value="No Butterfly" data-price="0" checked><strong>No Butterfly</strong><small>Keep it beautifully simple</small><b>Included</b></label>
+            <label class="choice-card"><input type="radio" name="butterfly" value="Golden Butterfly" data-price="100"><strong>Golden Butterfly</strong><small>A delicate keepsake detail</small><b>+ Rs. 100</b></label>
+            <label class="choice-card selected"><input type="radio" name="card" value="No Card" data-price="0" checked><strong>No Card</strong><small>For a simple gift</small><b>Included</b></label>
+            <label class="choice-card"><input type="radio" name="card" value="Handwritten Card" data-price="100"><strong>Message Card</strong><small>Handwritten with care</small><b>+ Rs. 100</b></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>05</span> Add your message</legend>
+          <label class="message-label" for="specialMessage">Your message for the card <small>(optional)</small></label>
+          <textarea id="specialMessage" name="specialMessage" maxlength="180" placeholder="Write something heartfelt..."></textarea>
+          <small class="character-count">0 / 180</small>
+        </fieldset>
+      </section>
+
+      <aside class="custom-summary" aria-live="polite">
+        <p class="eyebrow">YOUR CREATION</p>
+        <img src="" alt="Bouquet preview" class="summary-image">
+        <h2 class="summary-title">Your Custom bouquet</h2>
+        <ul class="summary-list">
+          <li><span>Size</span><strong data-summary="size">Signature</strong></li>
+          <li><span>Flower</span><strong data-summary="flower">Rose</strong></li>
+          <li><span>Wrapper</span><strong data-summary="wrapper">Ivory Wrap</strong></li>
+          <li><span>Ribbon</span><strong data-summary="ribbon">Satin Ribbon</strong></li>
+          <li><span>Extras</span><strong data-summary="extras">No Butterfly, No Card</strong></li>
+        </ul>
+        <div class="estimate-total"><span>Estimated total</span><strong id="estimatedPrice">Rs. 1,900</strong></div>
+        <button type="submit" class="btn create-bouquet-btn">Add Custom Bouquet</button>
+        <p class="summary-note">This is an estimate. Final details are confirmed before delivery.</p>
+      </aside>
+    </form>
+  </main>
+</body>
+</html>

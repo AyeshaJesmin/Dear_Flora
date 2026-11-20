@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Browse Dear Flora's handmade bouquet collection — birthday, anniversary, graduation and love bouquets, handcrafted and delivered islandwide in Sri Lanka.">
+  <meta property="og:title" content="Shop Handmade Bouquets | Dear Flora">
+  <meta property="og:description" content="Browse our handmade bouquet collection — handcrafted with love, delivered islandwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="image/B1.jpeg">
+  <title>Shop Handmade Bouquets | Dear Flora</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/shop.js" defer></script>
+</head>
+<body class="shop-page">
+  <header>
+    <a href="index.html" class="logo-link"><img src="image/logo.jpeg" alt="Dear Flora Logo" class="logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="customize.html">Customize</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <p class="eyebrow">DEAR FLORA COLLECTION</p>
+      <h1>Handcrafted bouquets for every beautiful moment</h1>
+      <p>Thoughtfully designed flowers, ribbons and finishing touches made to make your gift feel truly personal.</p>
+      <div class="shop-search">
+        <input type="search" id="searchInput" placeholder="Search your bouquet" aria-label="Search bouquets">
+      </div>
+      <span class="product-count">19 handcrafted bouquets to discover</span>
+    </section>
+
+    <section class="shop-catalogue" aria-labelledby="collection-title">
+      <div class="catalogue-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2 id="collection-title">Find the perfect bouquet</h2>
+        </div>
+        <p>Each piece is handmade with care and finished for your special occasion.</p>
+      </div>
+
+      <!-- These data-category values will be used for the JavaScript filter in Phase 2. -->
+      <div class="category-filter" aria-label="Bouquet categories">
+        <button class="active" type="button" data-category="all">All</button>
+        <button type="button" data-category="birthday">Birthday</button>
+        <button type="button" data-category="anniversary">Anniversary</button>
+        <button type="button" data-category="graduation">Graduation</button>
+        <button type="button" data-category="love">Love</button>
+        <button type="button" data-category="mothers-day">Mother's Day</button>
+        <button type="button" data-category="custom">Custom</button>
+      </div>
+
+      <div class="shop-product-grid">
+        <article class="product-card" data-category="birthday">
+          <span class="badge">NEW</span><img src="image/B1.jpeg" alt="Emerald Whisper bouquet">
+          <h3>Emerald Whisper</h3><h4>Rs. 1,500</h4><p>Emerald blooms, pearls and golden butterflies in a graceful arrangement.</p>
+          <a href="product.html?id=B1" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="love">
+          <img src="image/B2.jpeg" alt="Pink Lily Grace bouquet"><h3>Pink Lily Grace</h3><h4>Rs. 1,200</h4><p>A sweet, warm bouquet inspired by the gentle charm of lilies.</p>
+          <a href="product.html?id=B2" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="birthday">
+          <img src="image/B3.jpeg" alt="Butterfly Wishes bouquet"><h3>Butterfly Wishes</h3><h4>Rs. 1,500</h4><p>Soft blossoms and delicate butterflies for a magical celebration.</p>
+          <a href="product.html?id=B3" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="love">
+          <img src="image/B4.jpeg" alt="Crimson Melody bouquet"><h3>Crimson Melody</h3><h4>Rs. 1,500</h4><p>Rich crimson blooms arranged to express timeless devotion.</p>
+          <a href="product.html?id=B4" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="anniversary">
+          <img src="image/B5.jpeg" alt="Royal Sapphire Bloom bouquet"><h3>Royal Sapphire Bloom</h3><h4>Rs. 1,500</h4><p>Blue roses and golden details with an elegant, meaningful finish.</p>
+          <a href="product.html?id=B5" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="love">
+          <img src="image/B6.jpeg" alt="Crimson Royale bouquet"><h3>Crimson Royale</h3><h4>Rs. 1,800</h4><p>Luxurious crimson blossoms with refined black accents.</p>
+          <a href="product.html?id=B6" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="graduation">
+          <span class="badge">POPULAR</span><img src="image/B7.jpeg" alt="Golden Promise bouquet"><h3>Golden Promise</h3><h4>Rs. 1,600</h4><p>A joyful handmade bouquet to celebrate a proud new beginning.</p>
+          <a href="product.html?id=B7" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="birthday">
+          <img src="image/B8.jpeg" alt="Blush Garden bouquet"><h3>Blush Garden</h3><h4>Rs. 1,400</h4><p>A delicate floral gift for birthdays and heartfelt surprises.</p>
+          <a href="product.html?id=B8" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="anniversary">
+          <img src="image/B9.jpeg" alt="Midnight Charm bouquet"><h3>Midnight Charm</h3><h4>Rs. 1,700</h4><p>A polished bouquet with a bold, memorable presence.</p>
+          <a href="product.html?id=B9" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="mothers-day">
+          <img src="image/B10.jpeg" alt="Mother's Embrace bouquet"><h3>Mother's Embrace</h3><h4>Rs. 1,600</h4><p>A gentle expression of gratitude, warmth and love.</p>
+          <a href="product.html?id=B10" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="birthday">
+          <img src="image/B11.jpeg" alt="Velvet Petals bouquet"><h3>Velvet Petals</h3><h4>Rs. 1,450</h4><p>Soft petals and charming details for a beautifully personal gift.</p>
+          <a href="product.html?id=B11" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="custom">
+          <img src="image/B12.jpeg" alt="Pearl Petal bouquet"><h3>Pearl Petal</h3><h4>Rs. 1,650</h4><p>A refined design finished with elegant, pearlescent touches.</p>
+          <a href="product.html?id=B12" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="love">
+          <img src="image/B13.jpeg" alt="Forever Yours bouquet"><h3>Forever Yours</h3><h4>Rs. 1,700</h4><p>A romantic arrangement created for love-filled occasions.</p>
+          <a href="product.html?id=B13" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="graduation">
+          <img src="image/B14.jpeg" alt="Dream Chaser bouquet"><h3>Dream Chaser</h3><h4>Rs. 1,550</h4><p>A bright, thoughtful gift for a milestone worth remembering.</p>
+          <a href="product.html?id=B14" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="birthday">
+          <img src="image/B15.jpeg" alt="Sweet Celebration bouquet"><h3>Sweet Celebration</h3><h4>Rs. 1,500</h4><p>A cheerful bouquet made for smiles, wishes and celebrations.</p>
+          <a href="product.html?id=B15" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="mothers-day">
+          <img src="image/B16.jpeg" alt="Graceful Bloom bouquet"><h3>Graceful Bloom</h3><h4>Rs. 1,650</h4><p>Delicate textures and blooms in a warm, graceful composition.</p>
+          <a href="product.html?id=B16" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="custom">
+          <img src="image/B17.jpeg" alt="Golden Bloom bouquet"><h3>Golden Bloom</h3><h4>Rs. 1,750</h4><p>A premium bouquet with beautiful hand-finished details.</p>
+          <a href="product.html?id=B17" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="anniversary">
+          <img src="image/B18.jpeg" alt="Ever After bouquet"><h3>Ever After</h3><h4>Rs. 1,800</h4><p>A luxurious keepsake bouquet for a cherished celebration.</p>
+          <a href="product.html?id=B18" class="card-btn">View Bouquet</a>
+        </article>
+        <article class="product-card" data-category="love">
+          <span class="badge">LIMITED</span><img src="image/B19.jpeg" alt="Love Letter bouquet"><h3>Love Letter</h3><h4>Rs. 1,900</h4><p>A romantic finishing touch for your most special message.</p>
+          <a href="product.html?id=B19" class="card-btn">View Bouquet</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Order Confirmed | Dear Flora</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/confirmation.css">
+  <script src="js/order-confirmation.js" defer></script>
+</head>
+<body class="confirmation-page">
+  <header>
+    <a href="index.html" class="logo-link"><img src="image/logo.jpeg" alt="Dear Flora Logo" class="logo"></a>
+    <nav>
+      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="customize.html">Customize</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="confirmation-main">
+    <section class="confirmation-intro">
+      <p class="eyebrow">STEP 3 OF 3</p>
+      <div class="confirmation-icon">✓</div>
+      <h1>Thank you for your order!</h1>
+      <p id="confirmationSubtitle">Your bouquet is being prepared with care.</p>
+      <p class="order-id" id="orderId"></p>
+    </section>
+
+    <div class="confirmation-layout" id="confirmationContent">
+      <section class="confirmation-details-panel" aria-label="Delivery and payment details">
+        <fieldset class="checkout-section">
+          <legend><span>1</span> Delivery to</legend>
+          <dl class="detail-list" id="deliveryDetails"></dl>
+        </fieldset>
+
+        <fieldset class="checkout-section">
+          <legend><span>2</span> Payment method</legend>
+          <p class="payment-summary" id="paymentSummary"></p>
+          <div class="bank-details" id="bankDetailsConfirm" hidden>
+            <p class="bank-details-note">We'll confirm your order once payment is verified. Please share your slip via WhatsApp if you haven't already.</p>
+          </div>
+        </fieldset>
+      </section>
+
+      <aside class="cart-summary checkout-summary" aria-label="Order summary">
+        <p class="eyebrow">ORDER SUMMARY</p>
+        <div class="checkout-items" id="checkoutItems"></div>
+        <div class="summary-divider"></div>
+        <div class="summary-row"><span>Subtotal</span><strong id="subtotalAmount">Rs. 0</strong></div>
+        <div class="summary-row"><span>Delivery</span><strong id="deliveryAmount">Rs. 0</strong></div>
+        <div class="summary-divider"></div>
+        <div class="summary-row summary-total"><span>Total</span><strong id="totalAmount">Rs. 0</strong></div>
+
+        <a href="#" id="whatsappConfirmBtn" class="btn checkout-btn" target="_blank" rel="noopener" hidden style="text-align:center; background: linear-gradient(135deg, #25D366, #1ebe5d);">
+          Send Order via WhatsApp
+        </a>
+        <a href="shop.html" class="btn btn-outline checkout-btn continue-shopping-btn" style="margin-top:10px;">Continue Shopping</a>
+
+        <p class="summary-note">Your order has already been recorded — WhatsApp is optional, for a faster reply.</p>
+      </aside>
+    </div>
+
+    <div class="confirmation-empty" id="confirmationEmpty" hidden>
+      <p>We couldn't find a recent order.</p>
+      <a href="shop.html" class="btn">Browse Bouquets</a>
+    </div>
+  </main>
+</body>
+</html>
